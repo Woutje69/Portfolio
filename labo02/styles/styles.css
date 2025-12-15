@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: oklch(0.9961 0.0034 325.6);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+header {
+    background-color: oklch(14.54% 6.2% 264);
+    color: oklch(99.61% 0.34% 325.6);
+}
+
+footer {
+    background-color: oklch(0.3211 0 0);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: -2rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li:nth-child(2) {
+    background-color: oklch(0.4853 0.0863 224.47);
+    color: oklch(98.673% 0.00638 16.299);
+}
+
+footer > .container p:last-child {
+    margin: 0;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+a[href*="mozilla"] {
+    background-color: oklch(0.6892 0.1842 52.24 / 50.53%);
+}
+
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container--narrow{
+    max-width: 40rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+main {
+    padding-top: 2vh;
+    padding-bottom: 4vw;
+}
+
+footer .highlight {
+    font-weight: normal;
+    font-style: normal;
+    color: oklch(0.8912 0.0493 224.47);
+}
+
+nav a:hover {
+    background-color: oklch(0.6912 0.0567 224.47);;
+}
+
+nav a:focus-visible {
+    outline: 4px dotted oklch(0.6454 0.0987 168.35);
+}

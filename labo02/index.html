@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <title>Labo 02</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#introductieoefening">Introductieoefening</a></li>
+                    <li><a href="#container">Container</a></li>
+                    <li><a href="#nav">Nav</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container container--narrow">
+            <h1 class="p-2">Labo 02</h1>
+            <section id="introductieoefening">
+                <h2 class="p-1">Introductieoefening</h2>
+                <p>Start een nieuw project in je IDE naar keuze.</p>
+                <ol>
+                    <li>Zorg voor een index.html en een styles.css.</li>
+                    <li>Pas je HTML lang attribuut aan.</li>
+                    <li>Geef je document de title 'Labo 02'.</li>
+                </ol>
+                <h3 class="m-1">Stap 1: HTML</h3>
+                <ol>
+                    <li>Vergeet je landmark regions niet!</li>
+                    <li>Deel je hoofdinhoud (main) op in sections.
+                        <br>Pas alles toe wat je geleerd hebt in week 1.
+                    </li>
+                    <li>Tip: de links in de navigatie zijn <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a#linking_to_an_element_on_the_same_page">same page links</a>.</li>
+                    <li>Valideer je code regelmatig met de <a href="https://validator.w3.org/">W3C-validator</a> en met de <a href="https://www.deque.com/axe/browser-extensions/">aXe devtools</a></li>
+                </ol>
+                <h3 class="m-1">Stap 2: link-tags</h3>
+                <ol>
+                    <li>Voeg <a href="https://github.com/csstools/normalize.css/">normalize.css</a> toe in de head van je HTML-document.</li>
+                    <li>Voeg een google font (<a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>) toe in de head van je HTML-document.</li>
+                    <li>Koppel je eigen styles.css aan je HTML</li>
+                </ol>
+                <h3 class="m-1">Stap 3: start CSS</h3>
+                <ol>
+                    <li><span class="highlight">'Corrigeer'</span> de box-sizing property van alle elementen en van alle ::before en::after pseudo-elementen. Zie theorie!</li>
+                    <li>Maak een selector voor het root element → :root { ... }
+                        <ul>
+                            <li>Pas de background-color aan naar #fffdff.</li>
+                            <li>Pas de font-family aan naar Montserrat en vergeet je fallback font niet!</li>
+                            <li>Zet de line-height op 1.6.</li>
+                            <li>Zet scroll-behavior op smooth.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Maak een selector voor het body element → body { ... }
+                        <ol>
+                            <li>Zet de margin op 0.</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h3 class="m-1">stap 4: vragen</h3>
+                <ol>
+                    <li>Wat doet normalize.css?
+                        <br>Het zorgt ervoor dat browsers een consistente basisstijl gebruiken door standaard CSS-inconsistenties te corrigeren. 
+                        Het is geen reset, maar een normalisatie van stijlen.
+                    </li>
+                    <li>Wat is een fallback font, wat doet het, welk heb je gekozen en waarom?
+                        <br>Een fallback font is een alternatief lettertype dat wordt gebruikt als het primaire font niet geladen kan worden. 
+                        Het zorgt ervoor dat tekst altijd leesbaar blijft.
+                    </li>
+                    <li>Hoe heb je het font toegevoegd en waarom doe je dat beter niet op die manier?
+                        <br>Montserrat omdat die overal beschikbaar zijn en qua stijl dicht bij het gewenste font liggen.
+                        <br>Met een link naar Google Fonts in de HTML.
+                        <br>
+                        <ul>
+                            <li>Externe requests vertragen de laadtijd.</li>
+                            <li>Privacy-issues (tracking via externe servers).</li>
+                            <li>Als de server plat ligt, is het font niet beschikbaar.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section class="container container--narrow">
+                <h2>Container</h2>
+                <p>Een container is een typisch hulpmiddel om te zorgen dat de inhoud van je site niet uitgesmeerd wordt over je volledige schermbreedte. 
+                    Je vindt die op héél veel websites terug <span class="highlight">en is verplicht aanwezig in je portfolio.</span></p>
+            </section>
+            <section id="nav" class="m-2">
+                <h2>Nav</h2>
+                <p>Plaats hier een screenshot van jouw nav.</p>
+                <img src="./images/screenshot-nav.png" alt="screenshot van de navigatiebalk">
+            </section>
+        </div>
+        <div class="container container--narrow">
+            <span class="highlight">ELOICT</span>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span class="highlight">&copy; 2025 ELOICT</span>
+        </div>
+    </footer>
+</body>
+</html>
