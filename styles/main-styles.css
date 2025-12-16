@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: oklch(0.9961 0.0034 325.6);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+
+    --dark-blue: oklch(51.492% 0.19977 259.816);
+    --main-blue: oklch(69.167% 0.17192 246.771);
+    --neon-blue: oklch(89.478% 0.1167 203.471);
+    --white: oklch(93.339% 0.03192 274.122);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+header {
+    background-color: var(--dark-blue);
+    background: linear-gradient(315deg, #2FE6F2, #1FA2FF, #0B5ED7);
+    padding-bottom: .5rem;
+    
+    .container {
+        display: flex;
+        .logo {
+            height: 5rem;
+            margin-top: 1rem;
+        }
+    
+        nav {
+            
+            ul {
+                list-style: none;
+                margin-left: -2.5rem;
+
+                li {
+                    
+                    a {
+                        padding-block: .5rem;
+                        padding-inline: 1rem;
+                        color: var(--white);
+                        text-decoration: none;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+
+                        display: inline-block;
+                        text-decoration: none;
+                        border-radius: .75rem;
+                    }
+
+                    a:hover {
+                        background-color: var(--neon-blue);
+                        color: var(--dark-blue);
+                    }
+                }
+            }
+        }
+    }
+}
