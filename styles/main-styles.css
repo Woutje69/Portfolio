@@ -4,18 +4,19 @@
 
 :root {
     background-color: oklch(0.9961 0.0034 325.6);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Funnel Sans", sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
 
-    --dark-blue: oklch(51.492% 0.19977 259.816);
-    --main-blue: oklch(69.167% 0.17192 246.771);
-    --neon-blue: oklch(89.478% 0.1167 203.471);
-    --white: oklch(93.339% 0.03192 274.122);
+    --dark-blue: oklch(29.463% 0.06923 254.278);
+    --main-blue: oklch(54.518% 0.11072 254.098);
+    --light-blue: oklch(91.131% 0.01936 263.055);
+    --white: oklch(97.767% 0.00211 14.29);
 }
 
 body {
     margin: 0;
+    background-color: var(--white);
 }
 
 .container {
@@ -24,16 +25,36 @@ body {
     padding-inline: 1rem;
 }
 
-header {
-    background-color: var(--dark-blue);
-    background: linear-gradient(315deg, #2FE6F2, #1FA2FF, #0B5ED7);
-    padding-bottom: .5rem;
+h1 {
+    color: var(--dark-blue);
+}
+
+h2 {
+    color: var(--main-blue);
+}
+
+.button {
+    background-color: var(--main-blue);
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
     
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .75rem;
+}
+
+header {
+    background-color: var(--dark-blue);    
     .container {
         display: flex;
         .logo {
             height: 5rem;
-            margin-top: 1rem;
+            margin-block: 4.5rem;
+            margin-inline: 1rem;
         }
     
         nav {
@@ -58,11 +79,39 @@ header {
                     }
 
                     a:hover {
-                        background-color: var(--neon-blue);
+                        background-color: var(--light-blue);
                         color: var(--dark-blue);
                     }
                 }
             }
+        }
+    }
+}
+
+main {
+    margin-block: 1rem;
+
+    .intro {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .text {
+            max-width: 40rem;
+        }
+        img {
+            border-radius: 20rem;
+            height: 20rem;
+        }
+    }
+
+    .latest-exercises {
+        ol {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
     }
 }
