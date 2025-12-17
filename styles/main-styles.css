@@ -13,7 +13,7 @@
     --dark-blue: oklch(29.463% 0.06923 254.278);
     --main-blue: oklch(54.518% 0.11072 254.098);
     --light-blue: oklch(91.131% 0.01936 263.055);
-    --white: oklch(97% 0.00211 14.29);
+    --white: oklch(96.869% 0.00211 14.324);
 }
 
 body {
@@ -33,6 +33,14 @@ h1 {
 
 h2 {
     color: var(--main-blue);
+}
+
+a {
+    color: var(--main-blue);
+}
+
+.icon {
+    height: 1rem;
 }
 
 .button {
@@ -129,6 +137,7 @@ main {
         gap: 2rem;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
         margin-block-end: 2rem;
         .text {
             max-width: 40rem;

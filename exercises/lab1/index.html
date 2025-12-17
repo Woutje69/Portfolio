@@ -3,66 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/main-styles.css">
         <title>Lab1</title>
     </head>
     <body>
         <header>
-            <a href="../../" id="logo">Wout Vandevelde</a>
-            <nav>
-                <ul>
-                    <li><a href="../../">Home</a></li>
-                    <li><a href="../../exercises/">Exercises</a></li>
-                    <li><a href="../../about-me/">About me</a></li>
-                    <li><a href="../../contact/">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <a href="../"><img src="../../images/logo-wout-vandevelde.png" alt="logo wout vandevelde" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="../../">Home</a></li>
+                        <li><a href="../../exercises/">Exercises</a></li>
+                        <li><a href="../../about-me/">About me</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Lab 1 - Basics of HTML</h1>
-            <section>
-                <h2>Goals of the exercise</h2>
-                <ul>
-                    <li>Build a small multi-page HTML website with correct semantic structure (header, main, footer, nav).</li>
-                    <li>Use a clean project folder structure and relative paths for all links.</li>
-                    <li>Add proper metadata (lang, page titles) and include images using the images/ folder.</li>
-                    <li>Recreate the given example pages and place one &lt;h1&gt; per page in &lt;main&gt;.</li>
-                    <li>Validate all pages with the W3C Validator and aXe DevTools.</li>
-                    <li>Publish the website at voornaamnaam.ikdoeict.be/labo01/.</li>
-                    <li>Create a portfolio page with clear sections (goals, solution, description, links, reflection) and correct heading hierarchy.</li>
-                </ul>
-                <a href="../../labo01/" class="button">Go to the solution</a>
-            </section>
-            <section>
-                <h2>Description</h2>
-                <p>This exercise teaches you to build a small website using only HTML, 
-                    with correct semantic structure (header, nav, main, footer), proper relative links, 
-                    clean folder organization, and valid HTML. You recreate a simple example site, add images, 
-                    validate everything, upload it to your webspace, 
-                    and then create your own portfolio page with correct headings and sections.</p>
-            </section>
-            <section>
-                <h2>Related links</h2>
-                <ul>
-                    <li><a href="https://www.w3schools.com/charsets/default.asp" target="_blank">Adding special characters to my website</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Reflection</h2>
-                <ul>
-                    <li>
-                        <strong>Waaw!</strong>
-                        <p>Everything went quite good, because I already have a bit of experience.</p>
-                    </li>
-                    <li>
-                        <strong>Aauuw!</strong>
-                        <p>To find out how to add those special characters to the website, I had to search online to find the solution.</p>
-                    </li>
-                </ul>
-            </section>
+            <div class="container">
+                <h1>Lab 1 - Basics of HTML</h1>
+                <section>
+                    <h2>Goals of the exercise</h2>
+                    <ul>
+                        <li>Build a small multi-page HTML website with correct semantic structure (header, main, footer, nav).</li>
+                        <li>Use a clean project folder structure and relative paths for all links.</li>
+                        <li>Add proper metadata (lang, page titles) and include images using the images/ folder.</li>
+                        <li>Recreate the given example pages and place one &lt;h1&gt; per page in &lt;main&gt;.</li>
+                        <li>Validate all pages with the W3C Validator and aXe DevTools.</li>
+                        <li>Publish the website at voornaamnaam.ikdoeict.be/labo01/.</li>
+                        <li>Create a portfolio page with clear sections (goals, solution, description, links, reflection) and correct heading hierarchy.</li>
+                    </ul>
+                    <a href="../../labo01/" class="button-small" target="_blank"><img src="../../images/icons/link.png" alt="icon new tab" class="icon"> Go to the solution</a>
+                </section>
+                <section>
+                    <h2>Description</h2>
+                    <p>This exercise teaches you to build a small website using only HTML, 
+                        with correct semantic structure (header, nav, main, footer), proper relative links, 
+                        clean folder organization, and valid HTML. You recreate a simple example site, add images, 
+                        validate everything, upload it to your webspace, 
+                        and then create your own portfolio page with correct headings and sections.</p>
+                </section>
+                <section>
+                    <h2>Related links</h2>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/charsets/default.asp" target="_blank">Adding special characters to my website</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Reflection</h2>
+                    <ul>
+                        <li>
+                            <strong>Waaw!</strong>
+                            <p>Everything went quite good, because I already have a bit of experience.</p>
+                        </li>
+                        <li>
+                            <strong>Aauuw!</strong>
+                            <p>To find out how to add those special characters to the website, I had to search online to find the solution.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
         <footer>
-            <p>&copy; 2025 Wout Vandevelde - copyright</p>
+            <div class="container">
+                <p class="copyright">&copy; 2025 Wout Vandevelde - copyright</p>
+            </div>
         </footer>
     </body>
 </html>
