@@ -7,11 +7,13 @@
     font-family: "Funnel Sans", sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+    font-size: 1rem;
+    color: oklch(12% 0 0);
 
     --dark-blue: oklch(29.463% 0.06923 254.278);
     --main-blue: oklch(54.518% 0.11072 254.098);
     --light-blue: oklch(91.131% 0.01936 263.055);
-    --white: oklch(97.767% 0.00211 14.29);
+    --white: oklch(97% 0.00211 14.29);
 }
 
 body {
@@ -61,6 +63,21 @@ h2 {
     border-radius: .75rem;
 }
 
+.visually-hidden {
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.m-add-2-top {
+    margin-block-start: 2rem;
+}
+
 header {
     background-color: var(--dark-blue);    
     .container {
@@ -90,6 +107,8 @@ header {
                         display: inline-block;
                         text-decoration: none;
                         border-radius: .75rem;
+                        transition: background-color 0.3s ease-in-out,
+                            color 0.3s ease-in-out;
                     }
 
                     a:hover {
@@ -120,12 +139,11 @@ main {
         }
     }
 
-    .latest-labs-cards {
+    .labs-cards {
         display: flex;
-        flex-direction: row-reverse;
+        flex-wrap: wrap;
         justify-content: left;
         list-style: none;
-        flex-wrap: wrap-reverse;
         gap: 2rem;
         padding: 0;
         margin: 0;
@@ -173,6 +191,10 @@ main {
         }
 
     }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
 }
 
 footer {
@@ -182,13 +204,14 @@ footer {
 
     .container {
         display: flex;
+        justify-content: center;
     }
 
     ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        margin-inline-start: -3rem;
+        margin-inline-start: -2.4rem;
 
         li {
 

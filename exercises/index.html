@@ -3,47 +3,87 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
         <title>Exercises</title>
     </head>
     <body>
-        <!-- Dit is een commentaar, Hier komt de body -->
-
         <header>
-            <a href="../" id="logo">Wout Vandevelde</a>
-            <nav>
-                <ul>
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../exercises/">Exercises</a></li>
-                    <li><a href="../about-me/">About me</a></li>
-                    <li><a href="../contact/">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <a href="../"><img src="../images/logo-wout-vandevelde.png" alt="logo wout vandevelde" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../exercises/">Exercises</a></li>
+                        <li><a href="../about-me/">About me</a></li>
+                        <li><a href="../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <section>
-                <h1>My Exercises</h1>
-                <p>You found my exercise page! Here, you'll find a collection of exercises I've completed, along with my solutions for each one.</p>
-            </section>
-            <section>
-                <ol>
-                    <li>
-                        <h3>Lab 1</h3>
-                        <p>HTML</p>
-                        <a href="./lab1/">&#8594; Read more</a>
-                        <img src="../images/HTML5_logo_and_wordmark.svg.png" alt="logo HTML" height="250">
-                    </li>
-                    <li>
-                        <h3>Lab 2</h3>
-                        <p>Layout with CSS</p>
-                        <a href="./lab2/">&#8594; Read more</a>
-                        <img src="../images/CSS3_logo_and_wordmark.svg.png" alt="logo CSS" height="250">
-                    </li>
-                </ol>
-            </section>
+            <div class="container">
+                <section>
+                    <h1>My Exercises</h1>
+                    <p>You found my exercise page! Here, you'll find a collection of exercises I've completed, along with my solutions for each one.</p>
+                </section>
+                <section class="m-add-2-top">
+                    <h2 class="visually-hidden">My exercises</h2>
+                    <ol class="labs-cards">
+                        <li>
+                            <div class="content">
+                                <h3>Lab 1</h3>
+                                <p>HTML</p>
+                                <a href="../exercises/lab1/" class="button-small">&#8594; Read more</a>
+                                <a href="../exercises/lab1/" class="overlay-link">&#8594; Read more</a>
+                            </div>
+                            <img src="../images/html-logo.png" alt="logo HTML">
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Lab 2</h3>
+                                <p>Layout with CSS</p>
+                                <a href="../exercises/lab2/" class="button-small">&#8594; Read more</a>
+                                <a href="../exercises/lab2/" class="overlay-link">&#8594; Read more</a>
+                            </div>
+                            <img src="../images/css-logo.jpg" alt="logo CSS">
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Lab 3</h3>
+                                <p>CSS 2</p>
+                                <a href="../exercises/lab3/" class="button-small">&#8594; Read more</a>
+                                <a href="../exercises/lab3/" class="overlay-link">&#8594; Read more</a>
+                            </div>
+                            <img src="../images/css-logo.jpg" alt="logo CSS">
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Lab 4</h3>
+                                <p>Responsive</p>
+                                <a href="../exercises/lab4/" class="button-small">&#8594; Read more</a>
+                                <a href="../exercises/lab4/" class="overlay-link">&#8594; Read more</a>
+                            </div>
+                            <img src="../images/responsive-logo.jpg" alt="logo responsive">
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Lab 5</h3>
+                                <p>Comming soon...</p>
+                            </div>
+                            <img src="../images/work-in-progress.jpg" alt="work in progress">
+                        </li>
+                    </ol>
+                </section>
+            </div>
         </main>
         <footer>
-            <p>&copy; 2025 Wout Vandevelde - copyright</p>
+            <div class="container">
+                <p class="copyright">&copy; 2025 Wout Vandevelde - copyright</p>
+            </div>
         </footer>
     </body>
 </html>
