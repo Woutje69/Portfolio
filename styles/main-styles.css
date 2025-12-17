@@ -55,6 +55,14 @@ a {
     display: inline-block;
     text-decoration: none;
     border-radius: .75rem;
+
+    transition: background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--light-blue);
+        color: var(--main-blue);
+    }
 }
 
 .button-small {
@@ -69,6 +77,14 @@ a {
     display: inline-block;
     text-decoration: none;
     border-radius: .75rem;
+
+    transition: background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--light-blue);
+        color: var(--main-blue);
+    }
 }
 
 .visually-hidden {
@@ -120,7 +136,7 @@ header {
                     }
 
                     a:hover {
-                        background-color: var(--light-blue);
+                        background-color: var(--white);
                         color: var(--dark-blue);
                     }
                 }
@@ -166,7 +182,8 @@ main {
             overflow: hidden;           /*!!!!!*/
             box-shadow: 0 0 .2rem oklch(0 0 0 / .2), 0 0 2rem oklch(0 0 0 / .1);
             width: 18rem;          /*!!!!!*/
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out,
+            color 0.3s ease-in-out;
 
             &:hover {
                 background-color: var(--main-blue);
