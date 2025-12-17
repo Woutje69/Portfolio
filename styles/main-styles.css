@@ -47,6 +47,20 @@ h2 {
     border-radius: .75rem;
 }
 
+.button-small {
+    background-color: var(--main-blue);
+    padding-block: .25rem;
+    padding-inline: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .75rem;
+}
+
 header {
     background-color: var(--dark-blue);    
     .container {
@@ -54,14 +68,14 @@ header {
         .logo {
             height: 5rem;
             margin-block: 4.5rem;
-            margin-inline: 1rem;
+            margin-inline-end: 1rem;
         }
     
         nav {
             
             ul {
                 list-style: none;
-                margin-left: -2.5rem;
+                margin-inline-start: -2.5rem;
 
                 li {
                     
@@ -95,8 +109,8 @@ main {
         display: flex;
         gap: 2rem;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
+        margin-block-end: 2rem;
         .text {
             max-width: 40rem;
         }
@@ -106,12 +120,86 @@ main {
         }
     }
 
-    .latest-exercises {
-        ol {
-            list-style: none;
+    .latest-labs-cards {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        list-style: none;
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+
+        > li {
             display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
+            flex-direction: column;
+            position: relative;
+            background-color: var(--light-blue);
+            border-radius: 1rem;
+            overflow: hidden;           /*!!!!!*/
+            box-shadow: 0 0 .2rem oklch(0 0 0 / .2), 0 0 2rem oklch(0 0 0 / .1);
+            width: 18rem;          /*!!!!!*/
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: var(--main-blue);
+                color: var(--white);
+
+                .button-small {
+                    background-color: var(--white);
+                    color: var(--main-blue);
+                }
+            }
+            
+            .content {
+                margin: 1rem;
+    
+                .overlay-link {
+                    position: absolute;
+                    inset: 0;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+    
+                a:not(.overlay-link) {
+                    z-index: 1;
+                }
+            }
         }
+
+        img {
+            order: -1;
+        }
+
+    }
+}
+
+footer {
+    margin-block-start: 5rem;
+    padding-block-start: .5rem;
+    background-color: var(--light-blue);
+
+    .container {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-inline-start: -3rem;
+
+        li {
+
+            img{
+                width: 4rem;
+            }
+        }
+    }
+
+    .copyright {
+        color: var(--dark-blue);
+        
     }
 }
