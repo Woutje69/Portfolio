@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <title>Labo 03</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="./voorbereiding">Voorbereiding</a></li>
+                    <li><a href="./columns">Columns</a></li>
+                    <li><a href="./nav">Nav</a></li>
+                    <li><a href="./cards">Cards</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <h1>Labo 03</h1>
+    
+            <section>
+                <h2>Voorbereiding</h2>
+                <div>
+                    <h3>Stap 1</h3>
+                    <ol>
+                        <li>Maak een nieuw project.<br>Zorg voor een index.html en een styles.css</li>
+                        <li>Schrijf alle HTML, vergeet lang en title niet</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Stap 2</h3>
+                    <ol>
+                        <li>Voeg normalize.css toe via een link-tag in de head<br>rel="stylesheet", href="https://unpkg.com/@csstools/normalize.css"</li>
+                        <li>Voeg een google font toe in de head (Fredoka)</li>
+                        <li>Koppel je eigen styles.css aan je HTML</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Stap 3: css</h3>
+                    <ol>
+                        <li>'corrigeer' de box-sizing property van alle elementen en van alle ::before en ::after pseudo-elementen.</li>
+                        <li>Maak een :root selector
+                            <ul>
+                                <li>Pas de font-family aan naar Fredoka en vergeet je fallback font niet!</li>
+                                <li>Pas de line-height aan naar 1.6</li>
+                                <li>Pas het scroll behavior aan naar 'smooth'</li>
+                                <li>Maak variabelen --bg: oklch (0.99 0.003 325) en --primary: oklch(0.25 0.01 325)</li>
+                                <li>Gebruik die variabelen voor de achtergrondkleur en de tekstkleur</li>
+                            </ul>
+                        </li>
+                        <li>Maak een body selector, zet de margin op 0</li>
+                        <li>Maak een .container
+                            <ul>
+                                <li>max-width: 80rem</li>
+                                <li>linker en rechter margin is auto, gebruik logical properties en values</li>
+                                <li>linker en rechter padding is 1rem, gebruik logical properties en values</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <h2>Oefening 1: Columns</h2>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </section>
+            <section>
+                <h2>Oefening 2: Nav</h2>
+                <nav>
+                    <h3 class="visually-hidden">Navigatieoefening</h3>
+                    <ul>
+                        <li><a href="#">Portfolio of Someone</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Nothing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Oefening 3: Cards</h2>
+                <ul class="cards">
+                    <li>
+                        <div class="content">
+                            <h3>Card title 1</h3>
+                            <p>Card text Lorem ipsum dolor sit amet.</p>
+                            <a href="#">Read more about title 1</a>
+                            <a href="#" class="overlay-link">Read more about title 1</a>
+                        </div>
+                        <img src="https://picsum.photos/350/150?1" alt="">
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Card title 2</h3>
+                            <p>Card text Lorem ipsum dolor sit amet.</p>
+                            <a href="#">Read more about title 2</a>
+                            <a href="#" class="overlay-link">Read more about title 2</a>
+                        </div>
+                        <img src="https://picsum.photos/350/150?2" alt="">
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Card title 3</h3>
+                            <p>Card text Lorem ipsum dolor sit amet.</p>
+                            <a href="#">Read more about title 3</a>
+                            <a href="#" class="overlay-link">Read more about title 3</a>
+                        </div>
+                        <img src="https://picsum.photos/350/150?3" alt="">
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Card title 4</h3>
+                            <p>Card text Lorem ipsum dolor sit amet.</p>
+                            <a href="#">Read more about title 4</a>
+                            <a href="#" class="overlay-link">Read more about title 4</a>
+                        </div>
+                        <img src="https://picsum.photos/350/150?4" alt="">
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+</html>
