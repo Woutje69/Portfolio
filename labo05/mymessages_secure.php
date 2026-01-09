@@ -28,33 +28,15 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="nl">
 <head>
     <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
-
     <title>Mijn berichten</title>
 </head>
 <body>
     <?php if (sizeof($items) > 0) { ?>
     <ul>
-
+        <?php foreach ($items as $item) { ?>
+        <li><?php echo htmlentities($item['sender']); ?>: <?php echo htmlentities($item['message']); ?> (<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</li>
+        <?php } ?>
     </ul>
-
-    <table>
-        <thead>
-            <th>e-mail</th>
-            <th>berichten</th>
-            <th>tijd</th>
-        </thead>
-        <tbody>
-            <?php foreach ($items as $item) { ?>
-                <tr>
-                    <td><?php echo $item['sender']; ?>: </td>
-                    <td><?php echo $item['message']; ?> </td>
-                    <td>(<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</td>
-                </tr>
-            <?php } ?>
-
-        </tbody>
-    </table>
     <?php
     } else {
         echo '<p>Nog geen berichten ontvangen.</p>' . PHP_EOL;

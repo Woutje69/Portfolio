@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'wout_vandevelde');
-define('DB_PASS', 'wout_vandevelde123');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
@@ -22,8 +22,12 @@ try {
 }
 
 $name = isset($_POST['name']) ? (string)$_POST['name'] : '';
+$mail = isset($_POST['email']) ? (string)$_POST['email'] : '';
+$found = isset($_POST['found']) ? (string)$_POST['found'] : '';
 $message = isset($_POST['message']) ? (string)$_POST['message'] : '';
 $msgName = '';
+$msgMail = '';
+$msgFound = '';
 $msgMessage = '';
 
 // form is sent: perform formchecking!
@@ -36,6 +40,16 @@ if (isset($_POST['btnSubmit'])) {
         $msgName = 'Gelieve een naam in te voeren';
         $allOk = false;
     }
+    
+    if (trim($mail) === '') {
+        $msgMail = 'Gelieve een mail in te voeren';
+        $allOk = false;
+    }
+
+    if (trim($found) === '') {
+        $msgFound = 'Gelieve een optie te kiezen';
+        $allOk = false;
+    }
 
     if (trim($message) === '') {
         $msgMessage = 'Gelieve een boodschap in te voeren';
@@ -46,7 +60,7 @@ if (isset($_POST['btnSubmit'])) {
     if ($allOk) {
         // build & execute prepared statement
         $stmt = $db->prepare('INSERT INTO messages (sender, message, added_on) VALUES (?, ?, ?)');
-        $stmt->execute(array($name, $message, (new DateTime())->format('Y-m-d H:i:s')));
+        $stmt->execute(array($name, $mail, $found, $message, (new DateTime())->format('Y-m-d H:i:s')));
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
@@ -72,6 +86,7 @@ if (isset($_POST['btnSubmit'])) {
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
+        <link rel="stylesheet" type="text/css" href="./form-styles.css">
         <title>Contact</title>
     </head>
     <body>
@@ -95,13 +110,24 @@ if (isset($_POST['btnSubmit'])) {
                     <h2 class="visually-hidden">contactform</h2>
                     
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <h1>Testform</h1>
                             <p class="message">Alle velden zijn verplicht, tenzij anders aangegeven.</p>
                     
                             <div>
                                 <label for="name">Jouw naam</label>
                                 <input type="text" id="name" name="name" value="<?php echo htmlentities($name); ?>" class="input-text"/>
                                 <span class="message error"><?php echo $msgName; ?></span>
+                            </div>
+
+                            <div>
+                                <label for="email">Jouw e-mail</label>
+                                <input type="email" id="email" name="email" value="<?php echo htmlentities($mail); ?>" class="input-text"/>
+                                <span class="message error"><?php echo $msgMail; ?></span>
+                            </div>
+
+                            <div>
+                                <label for="email">Hoe heb je mij gevonden</label>
+                                <input type="email" id="email" name="email" value="<?php echo htmlentities($found); ?>" class="input-text"/>
+                                <span class="message error"><?php echo $msgMail; ?></span>
                             </div>
                     
                             <div>
@@ -110,7 +136,7 @@ if (isset($_POST['btnSubmit'])) {
                                 <span class="message error"><?php echo $msgMessage; ?></span>
                             </div>
                     
-                            <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur"/>
+                            <input type="submit" id="btnSubmit" class="button" name="btnSubmit" value="Verstuur"/>
                         </form>
                 </section>
             </div>

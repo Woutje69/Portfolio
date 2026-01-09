@@ -5,10 +5,10 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank)
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'Azerty123');
-define('DB_NAME', 'contact');
+define ('DB_HOST', 'localhost');
+define ('DB_USER', 'woodyvelde');
+define('DB_PASS', 'woodyvelde123');
+define('DB_NAME', 'labo05-database');
 
 date_default_timezone_set('Europe/Brussels');
 

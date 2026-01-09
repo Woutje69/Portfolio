@@ -6,7 +6,7 @@
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Testform</title>
+	<title>Bedankt!</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
@@ -15,7 +15,7 @@
 <?php
 
 
-		echo '<p>Thank you, stranger</p>';
+		echo '<p>Thank you, $name</p>';
 
 
 ?>
