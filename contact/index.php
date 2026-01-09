@@ -4,7 +4,7 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 
-// Constanten (connectie-instellingen databank)
+// Constanten (connectie-instellingen databank online)
 define('DB_HOST', 'localhost');
 define('DB_USER', 'wout_vandevelde');
 define('DB_PASS', 'plopmelk123');

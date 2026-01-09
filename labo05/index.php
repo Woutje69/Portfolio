@@ -4,11 +4,11 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 
-// Constanten (connectie-instellingen databank)
-define ('DB_HOST', 'localhost');
-define ('DB_USER', 'woodyvelde');
-define('DB_PASS', 'woodyvelde123');
-define('DB_NAME', 'labo05-database');
+// Constanten (connectie-instellingen databank online)
+define('DB_HOST', 'localhost');
+define('DB_USER', 'wout_vandevelde');
+define('DB_PASS', 'plopmelk123');
+define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
 
