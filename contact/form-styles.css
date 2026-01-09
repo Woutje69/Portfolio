@@ -19,7 +19,7 @@ input[type=submit] {
 	padding: .5em 2em;
 }
 
-label {
+label, legend {
 	display: block;
 	margin-bottom: .2em;
 	font-weight: bold;
