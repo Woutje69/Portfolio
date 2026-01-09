@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'wout_vandevelde');
+define('DB_PASS', 'plopmelk123');
 define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
@@ -59,8 +59,8 @@ if (isset($_POST['btnSubmit'])) {
     // end of form check. If $allOk still is true, then the form was sent in correctly
     if ($allOk) {
         // build & execute prepared statement
-        $stmt = $db->prepare('INSERT INTO messages (sender, message, added_on) VALUES (?, ?, ?)');
-        $stmt->execute(array($name, $mail, $found, $message, (new DateTime())->format('Y-m-d H:i:s')));
+        $stmt = $db->prepare('INSERT INTO messages (sender, email, message, found, added_on) VALUES (?, ?, ?)');
+        $stmt->execute(array($name, $mail, $message, $found, (new DateTime())->format('Y-m-d H:i:s')));
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
@@ -124,11 +124,25 @@ if (isset($_POST['btnSubmit'])) {
                                 <span class="message error"><?php echo $msgMail; ?></span>
                             </div>
 
-                            <div>
-                                <label for="email">Hoe heb je mij gevonden</label>
-                                <input type="email" id="email" name="email" value="<?php echo htmlentities($found); ?>" class="input-text"/>
-                                <span class="message error"><?php echo $msgMail; ?></span>
-                            </div>
+                            <fieldset>
+                                <legend>Hoe heb je mij gevonden</legend>
+                                <div>
+                                    <input type="checkbox" name="found[]" id="found0" value="google"/>
+                                    <label for="found0">Google</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="found[]" id="found1" value="linkedin"/>
+                                    <label for="found1">LinkedIn</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="found[]" id="found2" value="instagram"/>
+                                    <label for="found2">Instagram</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="found[]" id="found3" value="github"/>
+                                    <label for="found3">GitHub</label>
+                                </div>
+                            </fieldset>
                     
                             <div>
                                 <label for="message">Boodschap</label>

@@ -1,9 +1,10 @@
 
 CREATE TABLE `messages` (
   `id` int(11) NOT NULL auto_increment,
-  `email` varchar(255) NOT NULL,
   `sender` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `message` text NOT NULL,
+  `found` varchar(255) NOT NULL,
   `added_on` datetime NOT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci AUTO_INCREMENT = 1;
