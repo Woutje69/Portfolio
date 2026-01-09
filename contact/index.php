@@ -128,6 +128,7 @@ if (isset($_POST['btnSubmit'])) {
 
                             <fieldset>
                                 <legend class="vissu">Hoe heb je mij gevonden</legend>
+                                <span class="message-error"><?php echo $msgFound; ?></span>
                                 <div>
                                     <input type="checkbox" name="found[]" id="found0" value="google"/>
                                     <label for="found0">Google</label>
