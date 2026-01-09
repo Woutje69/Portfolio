@@ -11,6 +11,7 @@ textarea {
 }
 
 label,
+fieldset,
 input[type=submit] {
 	margin-top: 3rem;
 }
