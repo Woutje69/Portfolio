@@ -34,9 +34,10 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php if (sizeof($items) > 0) { ?>
     <table>
         <thead>
-            <th>e-mail</th>
-            <th>berichten</th>
-            <th>tijd</th>
+            <th>naam</th>
+            <th>email</th>
+            <th>bericht</th>
+            <th>gevonden via</th>
         </thead>
         <tbody>
             <?php foreach ($items as $item) { ?>
