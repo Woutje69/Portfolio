@@ -28,6 +28,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="utf-8">
     <title>Mijn berichten</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
 </head>
 <body>
     <?php if (sizeof($items) > 0) { ?>
