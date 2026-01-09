@@ -50,7 +50,7 @@ if (isset($_POST['btnSubmit'])) {
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
-            header('Location: formchecking_thanks.php?name=' . urlencode($name));
+            header('Location: ./formchecking_thanks.php?name=' . urlencode($name));
             exit();
         } // the query failed
         else {
