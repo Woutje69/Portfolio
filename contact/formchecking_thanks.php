@@ -31,10 +31,10 @@
     </header>
 	<main>
 		<div class="container">
-		<?php
-		echo "<p>Thank you, '$name'</p>";
-		?>
-		
+			<?php
+			echo "<p>Thank you, '$name'</p>";
+			?>
+			<img src="../images/thank-you" alt="foto bedankt voor de feedback">
 		</div>
 	</main>
 	<footer>
