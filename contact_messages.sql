@@ -2,7 +2,6 @@
 CREATE TABLE `messages_labo05` (
   `id` int(11) NOT NULL auto_increment,
   `sender` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
   `message` text NOT NULL,
   `added_on` datetime NOT NULL,
   PRIMARY KEY  (`id`)

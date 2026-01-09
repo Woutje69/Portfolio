@@ -45,7 +45,7 @@ if (isset($_POST['btnSubmit'])) {
     // end of form check. If $allOk still is true, then the form was sent in correctly
     if ($allOk) {
         // build & execute prepared statement
-        $stmt = $db->prepare('INSERT INTO messages (sender, message, added_on) VALUES (?, ?, ?)');
+        $stmt = $db->prepare('INSERT INTO messages_labo05 (sender, message, added_on) VALUES (?, ?, ?)');
         $stmt->execute(array($name, $message, (new DateTime())->format('Y-m-d H:i:s')));
 
         // the query succeeded, redirect to this very same page
