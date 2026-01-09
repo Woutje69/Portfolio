@@ -34,7 +34,7 @@ fieldset div {
 }
 
 input[type=checkbox] {
-	max-width: 2rem;
+	width: 1rem;
 }
 
 .message {
