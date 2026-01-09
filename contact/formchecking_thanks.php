@@ -1,6 +1,7 @@
 <?php
 
 	$name = isset($_GET['name']) ? $_GET['name'] : false;
+	$age = isset($_GET['age']) ? $_GET['age'] : false;
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -12,8 +13,10 @@
 <body>
 
 <?php
-	
-	echo '<p>Thank you, '$name'</p>';
+
+
+		echo '<p>Thank you, '$name'</p>';
+
 
 ?>
 
