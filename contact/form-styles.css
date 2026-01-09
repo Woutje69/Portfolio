@@ -1,12 +1,5 @@
 /* form-fields */
-
-form *,
-form *::before,
-form *::after {
-    all: unset;
-    box-sizing: border-box;
-}
-
+/* zie demo bestanden bij de theorie voor meer CSS ;) */
 input:not([type=submit]),
 textarea {
 	display: block;
