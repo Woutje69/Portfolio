@@ -1,11 +1,10 @@
 <?php
 
 // Constanten (connectie-instellingen databank)
-define ('DB_HOST', 'localhost');
-define ('DB_USER', 'woodyvelde');
-define('DB_PASS', 'woodyvelde123');
-define('DB_NAME', 'labo05-database');
-
+define('DB_HOST', 'localhost');
+define('DB_USER', 'wout_vandevelde');
+define('DB_PASS', 'plopmelk123');
+define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
 
@@ -19,7 +18,7 @@ try {
 }
 
 // Opvragen van alle taken uit de tabel tasks
-$stmt = $db->prepare('SELECT * FROM messages ORDER BY added_on DESC');
+$stmt = $db->prepare('SELECT * FROM messages_labo05 ORDER BY added_on DESC');
 $stmt->execute();
 $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
