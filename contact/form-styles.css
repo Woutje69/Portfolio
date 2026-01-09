@@ -6,7 +6,7 @@ textarea {
 	width: 100%;
 	max-width: 40rem;
 	padding: .75em;
-	border: 1px solid oklch(51.028% 0.00006 271.152);
+	border: 1px solid #666;
 	border-radius: .3rem;
 }
 
@@ -19,37 +19,15 @@ input[type=submit] {
 	padding: .5em 2em;
 }
 
+label {
+	display: block;
+	margin-bottom: .2em;
+	font-weight: bold;
+}
+
 .message {
 	font-size: 1.4rem;
 }
 .message.error {
 	color: oklch(49.784% 0.19805 29.009);
-}
-
-fieldset {
-    border: 1px solid oklch(84.522% 0.0001 271.152);
-    padding: 1rem 1.25rem;
-    max-width: 50rem;
-    border-radius: .5rem;
-}
-
-legend.vissu {
-    font-weight: bold;
-    padding: 0 0.5rem;
-    color: oklch(32.109% 0.00004 271.152);
-}
-
-fieldset div {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.4rem 0;
-}
-
-input[type="checkbox"] {
-    cursor: pointer;
-}
-
-label {
-    color: oklch(38.666% 0.00004 271.152);
 }
