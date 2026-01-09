@@ -25,6 +25,10 @@ label, legend {
 	font-weight: bold;
 }
 
+fieldset label {
+	font-weight: normal;
+}
+
 .message {
 	font-size: 1.4rem;
 }
