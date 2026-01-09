@@ -108,7 +108,7 @@ if (isset($_POST['btnSubmit'])) {
         <main>
             <div class="container">
                 <h1>Contact me</h1>
-                <section>
+                <section class="form">
                     <h2 class="visually-hidden">contactform</h2>
                     
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
