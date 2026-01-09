@@ -10,6 +10,10 @@ textarea {
 	border-radius: .3rem;
 }
 
+form {
+	max-width: 40rem;
+}
+
 label,
 fieldset,
 input[type=submit] {
