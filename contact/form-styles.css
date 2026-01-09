@@ -16,10 +16,6 @@ input[type=submit] {
 	margin-top: 3rem;
 }
 
-input[type=submit] {
-	padding: .5em 2em;
-}
-
 label, legend {
 	display: block;
 	margin-bottom: .2em;
