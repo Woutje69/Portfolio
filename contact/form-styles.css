@@ -27,6 +27,7 @@ label, legend {
 
 fieldset label {
 	font-weight: normal;
+	margin: 0;
 }
 
 fieldset div {
