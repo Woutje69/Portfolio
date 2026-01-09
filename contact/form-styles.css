@@ -16,6 +16,10 @@ input[type=submit] {
 	margin-top: 3rem;
 }
 
+input[type=submit] {
+	border: none;
+}
+
 label, legend {
 	display: block;
 	margin-bottom: .2em;
