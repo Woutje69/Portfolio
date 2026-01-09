@@ -38,6 +38,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th>email</th>
             <th>bericht</th>
             <th>gevonden via</th>
+            <th>datum</th>
         </thead>
         <tbody>
             <?php foreach ($items as $item) { ?>

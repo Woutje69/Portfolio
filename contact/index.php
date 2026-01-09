@@ -22,9 +22,9 @@ try {
 }
 
 $name = isset($_POST['name']) ? (string)$_POST['name'] : '';
-$mail = isset($_POST['email']) ? (string)$_POST['email'] : '';
-$found = isset($_POST['found']) ? (array)$_POST['found'] : '';
-$message = isset($_POST['message']) ? (string)$_POST['message'] : '';
+$mail = isset($_POST['email']) ? (string)$_POST['email'] '';
+$found = isset($_POST['found']) ? (array)$_POST['found'] '';
+$message = isset($_POST['message']) ? (string)$_POST['message'] '';
 $msgName = '';
 $msgMail = '';
 $msgFound = '';
