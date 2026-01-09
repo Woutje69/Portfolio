@@ -30,9 +30,12 @@
             </div>
     </header>
 	<main>
+		<div class="container">
 		<?php
 		echo "<p>Thank you, '$name'</p>";
 		?>
+		
+		</div>
 	</main>
 	<footer>
             <div class="container">
