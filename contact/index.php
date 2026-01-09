@@ -112,22 +112,23 @@ if (isset($_POST['btnSubmit'])) {
                     <h2 class="visually-hidden">contactform</h2>
                     
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <p class="message">Alle velden zijn verplicht, tenzij anders aangegeven.</p>
+                            <p class="small">All fields required</p>
                     
                             <div>
                                 <label for="name">Jouw naam</label>
                                 <input type="text" id="name" name="name" value="<?php echo htmlentities($name); ?>" class="input-text"/>
-                                <span class="message error"><?php echo $msgName; ?></span>
+                                <span class="message-error"><?php echo $msgName; ?></span>
                             </div>
 
                             <div>
                                 <label for="email">Jouw e-mail</label>
                                 <input type="email" id="email" name="email" value="<?php echo htmlentities($mail); ?>" class="input-text"/>
-                                <span class="message error"><?php echo $msgMail; ?></span>
+                                <span class="message-error"><?php echo $msgMail; ?></span>
                             </div>
 
                             <fieldset>
-                                <legend>Hoe heb je mij gevonden</legend>
+                                <legen>>Hoe heb je mij gevonden</legend>
+                                <span class="message-error"><?php echo $msgFound; ?></span>
                                 <div>
                                     <input type="checkbox" name="found[]" id="found0" value="google"/>
                                     <label for="found0">Google</label>
@@ -149,7 +150,7 @@ if (isset($_POST['btnSubmit'])) {
                             <div>
                                 <label for="message">Boodschap</label>
                                 <textarea name="message" id="message" rows="5" cols="40"><?php echo htmlentities($message); ?></textarea>
-                                <span class="message error"><?php echo $msgMessage; ?></span>
+                                <span class="message-error"><?php echo $msgMessage; ?></span>
                             </div>
                     
                             <input type="submit" id="btnSubmit" class="button" name="btnSubmit" value="Verstuur"/>
