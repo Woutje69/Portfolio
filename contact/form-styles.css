@@ -12,6 +12,8 @@ textarea {
 
 form {
 	max-width: 40rem;
+	justify-content: center;
+	align-items: center;
 }
 
 label,
