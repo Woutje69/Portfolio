@@ -32,7 +32,7 @@
 	<main>
 		<div class="container">
 			<?php
-			echo "<h1>Thank you, '$name'</h1>";
+			echo "<h1>Thank you, {$name}</h1>";
 			?>
 			<img src="../images/thank-you.jpg" alt="foto bedankt voor de feedback">
 		</div>
