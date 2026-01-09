@@ -15,7 +15,7 @@
 <?php
 
 
-		echo '<p>Thank you for your submit</p>';
+		echo '<p>Thank you, stranger</p>';
 
 
 ?>
@@ -34,10 +34,10 @@
 		 * @param mixed $var
 		 * @return void
 		 */
-		/function dump($var) {
-		/*	echo '<pre>'; */
+		function dump($var) {
+			echo '<pre>';
 			var_dump($var);
-		/*	echo '</pre>'; */
+			echo '</pre>';
 		}
 
 
