@@ -45,7 +45,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $item['sender']; ?>: </td>
                     <td><?php echo $item['email']; ?>: </td>
                     <td><?php echo $item['message']; ?> </td>
-                    <td><?php echo $item['found on']; ?>: </td>
+                    <td><?php echo $item['found']; ?>: </td>
                     <td>(<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</td>
                 </tr>
             <?php } ?>
