@@ -44,10 +44,7 @@ input[type=checkbox] {
 	width: 1rem;
 }
 
-.message {
-	font-size: 1.4rem;
-}
-.message.error {
+.message-error {
 	color: oklch(49.784% 0.19805 29.009);
 }
 
