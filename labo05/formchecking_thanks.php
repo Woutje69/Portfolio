@@ -15,7 +15,7 @@
 <?php
 
 
-		echo '<p>Thank you, {$name}</p>';
+		echo "<p>Thank you, {$name}</p>";
 
 
 ?>
