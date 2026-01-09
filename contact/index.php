@@ -46,7 +46,8 @@ if (isset($_POST['btnSubmit'])) {
         $allOk = false;
     }
 
-    if (trim($found) === '') {
+    
+    if (empty($found)) {
         $msgFound = 'Gelieve een optie te kiezen';
         $allOk = false;
     }
@@ -59,8 +60,9 @@ if (isset($_POST['btnSubmit'])) {
     // end of form check. If $allOk still is true, then the form was sent in correctly
     if ($allOk) {
         // build & execute prepared statement
-        $stmt = $db->prepare('INSERT INTO messages (sender, email, message, found, added_on) VALUES (?, ?, ?)');
-        $stmt->execute(array($name, $mail, $message, $found, (new DateTime())->format('Y-m-d H:i:s')));
+        $foundString = implode(',', $found);
+        $stmt = $db->prepare('INSERT INTO messages (sender, email, message, found, added_on) VALUES (?, ?, ?, ?, ?)');
+        $stmt->execute(array($name, $mail, $message, $foundString, (new DateTime())->format('Y-m-d H:i:s')));
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
