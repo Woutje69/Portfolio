@@ -90,6 +90,8 @@ if (isset($_POST['btnSubmit'])) {
 
         <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur"/>
     </form>
+
+    <a href="./mymessages_secure.php">my messages</a>
 </main>
 </body>
 </html>
