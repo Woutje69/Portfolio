@@ -88,7 +88,7 @@ if (isset($_POST['btnSubmit'])) {
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
-    <link rel="stylesheet" type="text/css" href="../form-styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/form-styles.css">
     <title>Contact</title>
 </head>
     <body>
