@@ -52,8 +52,9 @@ h1 {
 	font-size: 1rem;
 }
 
-.container img {
+.thank-you-img {
 	max-width: 10%;
+	height: 5rem;
 }
 
 table {
