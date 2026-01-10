@@ -148,7 +148,7 @@ if (isset($_POST['btnSubmit'])) {
                             </fieldset>
                     
                             <div>
-                                <label for="message">Message</label>
+                                <label for="message">Message:</label>
                                 <textarea name="message" id="message" rows="5" cols="40"><?php echo htmlentities($message); ?></textarea>
                                 <span class="message-error"><?php echo $msgMessage; ?></span>
                             </div>
