@@ -1,9 +1,7 @@
 <?php
-
 	$name = isset($_GET['name']) ? $_GET['name'] : false;
-	$age = isset($_GET['age']) ? $_GET['age'] : false;
-
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Thank You!!</title>
@@ -13,8 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="./form-styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
+        <link rel="stylesheet" type="text/css" href="./form-styles.css">
 </head>
 <body>
 	<header>
