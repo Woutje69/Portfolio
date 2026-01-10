@@ -52,14 +52,15 @@ main .container {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 
 	h1 {
 		font-size: 1.5rem;
 	}
 	
 	img {
-		max-width: 40rem;
+		width: 40rem;
+		max-width: 90%;
 	}
 }
 
