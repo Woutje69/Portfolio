@@ -48,12 +48,12 @@ input[type=checkbox] {
 	color: oklch(49.784% 0.19805 29.009);
 }
 
-.container {
+main .container {
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
+
 	h1 {
 		font-size: 1.5rem;
 	}
