@@ -1,5 +1,19 @@
 /* form-fields */
 /* zie demo bestanden bij de theorie voor meer CSS ;) */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+
 input:not([type=submit]),
 textarea {
 	display: block;
