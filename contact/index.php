@@ -22,9 +22,9 @@ try {
 }
 
 $name = isset($_POST['name']) ? (string)$_POST['name'] : '';
-$mail = isset($_POST['email']) ? (string)$_POST['email'] '';
-$found = isset($_POST['found']) ? (array)$_POST['found'] '';
-$message = isset($_POST['message']) ? (string)$_POST['message'] '';
+$mail = isset($_POST['email']) ? (string)$_POST['email'] : '';
+$found = isset($_POST['found']) ? (array)$_POST['found'] : '';
+$message = isset($_POST['message']) ? (string)$_POST['message'] : '';
 $msgName = '';
 $msgMail = '';
 $msgFound = '';
@@ -79,18 +79,18 @@ if (isset($_POST['btnSubmit'])) {
 }
 
 ?><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
-        <link rel="stylesheet" type="text/css" href="./form-styles.css">
-        <title>Contact</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main-styles.css">
+    <link rel="stylesheet" type="text/css" href="./form-styles.css">
+    <title>Contact</title>
+</head>
     <body>
          <header>
             <div class="container">

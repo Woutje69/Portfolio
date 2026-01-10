@@ -133,21 +133,22 @@ main {
         gap: 2rem;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin-block-end: 2rem;
         .text {
             max-width: 40rem;
         }
         img {
-            border-radius: 2rem;
+            border-radius: 5rem;
             height: 20rem;
+            order: -1;
         }
     }
 
     .labs-cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: center;
         list-style: none;
         gap: 2rem;
         padding: 0;
@@ -212,6 +213,10 @@ footer {
     .container {
         display: flex;
         justify-content: center;
+
+        h2 {
+            margin-block: 1rem;
+        }
     }
 
     ul {
