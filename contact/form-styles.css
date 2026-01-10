@@ -48,6 +48,14 @@ input[type=checkbox] {
 	color: oklch(49.784% 0.19805 29.009);
 }
 
+h1 {
+	font-size: 1.5rem;
+}
+
+img {
+	width: 90%;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

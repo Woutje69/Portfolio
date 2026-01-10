@@ -115,19 +115,19 @@ if (isset($_POST['btnSubmit'])) {
                             <p class="small">All fields required</p>
                     
                             <div>
-                                <label for="name">Jouw naam</label>
+                                <label for="name">Name:</label>
                                 <input type="text" id="name" name="name" value="<?php echo htmlentities($name); ?>" class="input-text"/>
                                 <span class="message-error"><?php echo $msgName; ?></span>
                             </div>
 
                             <div>
-                                <label for="email">Jouw e-mail</label>
+                                <label for="email">E-mail:</label>
                                 <input type="email" id="email" name="email" value="<?php echo htmlentities($mail); ?>" class="input-text"/>
                                 <span class="message-error"><?php echo $msgMail; ?></span>
                             </div>
 
                             <fieldset>
-                                <legend class="vissu">Hoe heb je mij gevonden</legend>
+                                <legend class="vissu">How did you find me?</legend>
                                 <span class="message-error"><?php echo $msgFound; ?></span>
                                 <div>
                                     <input type="checkbox" name="found[]" id="found0" value="google"/>
@@ -148,7 +148,7 @@ if (isset($_POST['btnSubmit'])) {
                             </fieldset>
                     
                             <div>
-                                <label for="message">Boodschap</label>
+                                <label for="message">Message</label>
                                 <textarea name="message" id="message" rows="5" cols="40"><?php echo htmlentities($message); ?></textarea>
                                 <span class="message-error"><?php echo $msgMessage; ?></span>
                             </div>
