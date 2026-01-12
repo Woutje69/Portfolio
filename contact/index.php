@@ -100,7 +100,7 @@ if (isset($_POST['btnSubmit'])) {
                         <li><a href="../">Home</a></li>
                         <li><a href="../exercises/">Exercises</a></li>
                         <li><a href="../about-me/">About me</a></li>
-                        <li><a href="../contact/">Contact</a></li>
+                        <li><a href="../contact/" class="current-page">Contact</a></li>
                     </ul>
                 </nav>
             </div>

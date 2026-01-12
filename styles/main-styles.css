@@ -37,6 +37,10 @@ h2 {
     margin-block-start: 2.5rem;
 }
 
+h3 {
+    margin: 0;
+}
+
 p {
     max-width: 40rem;
 }
@@ -86,7 +90,7 @@ a {
     width: 1px;
 }
 
-.center-mobile {
+.section-title {
     text-align: center;
 }
 
@@ -107,7 +111,6 @@ header {
                 margin-inline-start: -2.5rem;
 
                 li {
-                    
                     a {
                         padding-block: .5rem;
                         padding-inline: 1rem;
@@ -126,6 +129,10 @@ header {
                     a:hover {
                         background-color: var(--white);
                         color: var(--dark-blue);
+                    }
+
+                    .current-page {
+                        text-decoration: underline;                        
                     }
                 }
             }
@@ -160,7 +167,7 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         list-style: none;
-        gap: 2rem;
+        gap: 1.5rem;
         padding: 0;
         margin: 0;
 
@@ -206,7 +213,6 @@ main {
         img {
             order: -1;
         }
-
     }
 }
 
@@ -251,6 +257,7 @@ footer {
             justify-content: space-between;
             .logo {
                 margin-block: .75rem;
+                margin-inline-end: .1rem;
             }
             nav {
                 ul {
@@ -261,7 +268,7 @@ footer {
     }
 }
 
-@media (min-width: 944px) {
+@media (min-width: 960px) {
     .center-mobile {
         text-align: start;
     }
