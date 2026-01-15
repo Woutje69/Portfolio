@@ -1,0 +1,71 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.width-18 {
+    width: 18rem;
+}
+
+.width-7 {
+    width: 7rem;
+}
+
+.order-1-before {
+    order: -1;
+}
+
+.bg-color-black {
+    background-color: oklch(0% 0 0);
+}
+
+.color-white {
+    color: oklch(100% 0.00011 271.152);
+}
+
+.padding-025 {
+    padding: .25rem;
+}
+
+.border-radius-05 {
+    border-radius: .5rem;
+}
+
+.m-left-05 {
+    margin-inline-start: .5rem;
+}
+
+.m-block-05 {
+    margin-block: .5rem;
+}
+
+.grey {
+    color: oklch(59.987% 0.00007 271.152);
+}
+
+.size-075 {
+    font-size: 0.75rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bigger {
+    font-size: 1.25rem;
+}
+
+.border-thin {
+    border: 1px solid oklch(59.987% 0.00007 271.152);
+}
+
+.no-border {
+    border: none;
+}
