@@ -1,0 +1,28 @@
+main {
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    background-color: oklch(48.946% 0.15711 143.241);
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    color: oklch(95.213% 0.00011 271.152);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 20rem;
+    margin: 1rem;
+    
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .75rem;
+
+    transition: background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: oklch(48.946% 0.15711 143.241 / 0.502);
+        color: oklch(48.946% 0.15711 143.241);
+    }
+}
