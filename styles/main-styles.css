@@ -99,6 +99,10 @@ a {
     text-align: center;
 }
 
+.mt--2 {
+    margin-block-start: -2rem;
+}
+
 header {
     background-color: var(--dark-blue);    
     .container {
@@ -147,7 +151,6 @@ header {
 
 main {
     margin-block-end: 2rem;
-    margin-block-start: -2rem;
 
     .intro {
         display: flex;
