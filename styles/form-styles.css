@@ -16,12 +16,10 @@ form {
 	padding: 1rem;
 }
 
-section {
+main section {
 	margin-inline: auto;
 	width: 100%;
 	max-width: 40rem;
-	align-items: center;
-	text-align: center;
 }
 
 label,
