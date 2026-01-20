@@ -64,6 +64,10 @@ main .container {
 	padding-inline: 1rem;
 }
 
+.thank-you-img {
+	max-width: 90%;
+}
+
 
 table {
   width: 100%;

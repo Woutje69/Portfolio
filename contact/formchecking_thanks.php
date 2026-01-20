@@ -31,7 +31,7 @@
 	<main>
 		<div class="container">
             <h1>Thank you, <?php echo $name;?></h1>
-			<img src="../images/thank-you.jpg" alt="foto bedankt voor de feedback">
+			<img src="../images/thank-you.jpg" alt="foto bedankt voor de feedback" class="thank-you-img">
 		</div>
 	</main>
 	<footer>
