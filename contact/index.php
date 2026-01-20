@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank online)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'wout_vandevelde');
+define('DB_PASS', 'plopmelk123');
 define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
