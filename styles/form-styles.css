@@ -20,6 +20,8 @@ section {
 	margin-inline: auto;
 	width: 100%;
 	max-width: 40rem;
+	align-items: center;
+	text-align: center;
 }
 
 label,
