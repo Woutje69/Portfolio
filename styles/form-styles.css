@@ -4,9 +4,9 @@ input:not([type=submit]),
 textarea {
 	display: block;
 	width: 100%;
-	max-width: 40rem;
+	max-width: 38rem;
 	padding: .75em;
-	border: 1px solid #666;
+	border: 1px solid oklch(51.028% 0.00006 271.152);
 	border-radius: .3rem;
 }
 
@@ -14,6 +14,14 @@ form {
 	background-color: var(--light-blue);
 	border-radius: 1rem;
 	padding: 1rem;
+	
+	fieldset {
+		margin-block-start: 2rem;
+	}
+}
+
+footer {
+	margin-block-start: 10rem;
 }
 
 main section {
@@ -76,20 +84,20 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid oklch(89.755% 0.0001 271.152);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: oklch(96.715% 0.00011 271.152);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: oklch(98.212% 0.00011 271.152);
 }
 
 tr:hover {
-  background-color: #eaeaea;
+  background-color: oklch(93.705% 0.00011 271.152);
 }

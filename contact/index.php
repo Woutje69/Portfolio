@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank online)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'wout_vandevelde');
-define('DB_PASS', 'plopmelk123');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 define('DB_NAME', 'portfolio_database');
 
 date_default_timezone_set('Europe/Brussels');
@@ -159,7 +159,24 @@ if (isset($_POST['btnSubmit'])) {
         </main>
         <footer>
             <div class="container">
-                <p class="copyright">&copy; 2025 Wout Vandevelde - copyright</p>
+                <section>
+                    <h2>You can also find me on</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/wout-vandevelde-3999a3371/" target="_blank"><img src="../images/icons/icons8-linkedin-100.png" alt="logo linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wout_vandevelde_/" target="_blank"><img src="../images/icons/icons8-instagram-100.png" alt="logo instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/wout.vandevelde.75" target="_blank"><img src="../images/icons/icons8-facebook-100.png" alt="logo facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Woutje69" target="_blank"><img src="../images/icons/icons8-github-100.png" alt="logo github"></a>
+                        </li>
+                    </ul>
+                    <p class="copyright">&copy; 2025 Wout Vandevelde - copyright</p>
+                </section>
             </div>
         </footer>
     </body>

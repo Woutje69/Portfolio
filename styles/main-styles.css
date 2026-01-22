@@ -34,7 +34,7 @@ h1 {
 
 .h1-title-transform {
     text-align: center;
-    transform: translate(0, 22rem);
+    transform: translate(0, 21.75rem);
 }
 
 h2 {
@@ -51,7 +51,7 @@ p {
 }
 
 a {
-    color: var(--main-blue);
+    color: var(--dark-blue);
 }
 
 .icon {
@@ -125,7 +125,7 @@ header {
                         padding-inline: 1rem;
                         color: var(--white);
                         text-decoration: none;
-                        font-size: 1.25rem;
+                        font-size: 1.2rem;
                         font-weight: bold;
 
                         display: inline-block;
@@ -224,6 +224,36 @@ main {
             order: -1;
         }
     }
+
+    .information {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div {
+            background-color: var(--light-blue);
+            border: .2rem solid var(--main-blue);
+            border-radius: 1rem;
+            width: 100%;
+            height: fit-content;
+            padding-inline: .75rem;
+            align-items: center;
+            margin: 1rem;
+
+            h2 {
+                margin-block: 1.25rem;
+            }
+
+            ul {
+                list-style: none;
+                margin-inline-start: -2.5rem;
+            }
+        }
+
+        .skills ul {
+            margin-inline-start: 0;
+            list-style: unset;
+        }
+    }
 }
 
 footer {
@@ -260,10 +290,35 @@ footer {
     }
 }
 
-@media (min-width: 350px) {
+@media (min-width: 345px) {
 
     .h1-title-transform {
         transform: translate(0, 20rem);
+    }
+}
+
+@media (min-width: 535px) {
+    header {
+
+        .container {
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                margin-block: .75rem;
+                margin-inline-end: .1rem;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+
+                    li a {
+                        padding-inline: .5rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -272,14 +327,22 @@ footer {
         .container {
             align-items: center;
             justify-content: space-between;
+
             .logo {
                 margin-block: .75rem;
                 margin-inline-end: .1rem;
             }
-            nav {
-                ul {
-                    display: flex;
-                }
+
+            nav ul li a{
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    main {
+        .information {
+            div {
+                width: fit-content;
             }
         }
     }
@@ -307,6 +370,10 @@ footer {
 
         .about-title {
             transform: translate(11.5rem, 3.5rem);
+        }
+
+        .information {
+            padding-block: 4.5rem;
         }
     }
 }
