@@ -73,7 +73,7 @@ main .container {
 }
 
 .thank-you-img {
-	margin-inline-start: 5rem;
+	margin-block: 5rem;
 	max-width: 90%;
 }
 
