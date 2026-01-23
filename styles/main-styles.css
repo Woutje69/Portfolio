@@ -13,6 +13,7 @@
     --dark-blue: oklch(29.463% 0.06923 254.278);
     --main-blue: oklch(54.518% 0.11072 254.098);
     --light-blue: oklch(91.131% 0.01936 263.055);
+    --very-light-blue: oklch(96.106% 0.00713 268.594);
     --white: oklch(96.869% 0.00211 14.324);
 }
 
@@ -185,7 +186,7 @@ main {
             display: flex;
             flex-direction: column;
             position: relative;
-            background-color: var(--light-blue);
+            background-color: var(--very-light-blue);
             border-radius: 1rem;
             overflow: hidden;           /*!!!!!*/
             box-shadow: 0 0 .2rem oklch(0 0 0 / .2), 0 0 2rem oklch(0 0 0 / .1);
@@ -230,7 +231,7 @@ main {
         flex-wrap: wrap;
         justify-content: space-evenly;
         div {
-            background-color: var(--light-blue);
+            background-color: var(--very-light-blue);
             border: .2rem solid var(--main-blue);
             border-radius: 1rem;
             width: 100%;
@@ -252,6 +253,25 @@ main {
         .skills ul {
             margin-inline-start: 0;
             list-style: unset;
+        }
+    }
+
+    .goals-and-preview {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .preview-picture {
+            margin-block-start: auto;
+            padding-block-start: 1rem;
+            img {
+                max-width: 95%;
+                max-height: 19rem;
+                border-radius: 1rem;
+                border: .25rem solid var(--main-blue);
+            }
         }
     }
 }
@@ -345,6 +365,10 @@ footer {
                 width: fit-content;
             }
         }
+
+        .goals-and-preview .preview-picture img {
+            max-width: 35rem;
+        }
     }
 }
 
@@ -374,6 +398,10 @@ footer {
 
         .information {
             padding-block: 4.5rem;
+        }
+
+        .labs-cards {
+            justify-content: flex-start;
         }
     }
 }
